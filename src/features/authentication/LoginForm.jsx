@@ -2,7 +2,7 @@ import Button from "../../ui/Button";
 import Form from "../../ui/Form";
 import Input from "../../ui/Input";
 import FormRowVertical from "../../ui/FormRowVertical";
-import Spinner from "../../ui/Spinner";
+import SpinnerMini from "../../ui/SpinnerMini";
 
 import { useState } from "react";
 import { useLogin } from "./useLogin";
@@ -52,8 +52,8 @@ function LoginForm() {
         />
       </FormRowVertical>
       <FormRowVertical>
-        <Button sizes="large" disabled={isLoading}>
-          {isLoading ? <Spinner /> : "Login"}
+        <Button sizes="large" disabled={isLoading} variations="primary">
+          {isLoading ? <SpinnerMini /> : "Login"}
         </Button>
       </FormRowVertical>
     </Form>
